@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/navforhomepage.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logp.png" type="image/x-icon">
+    <title>Rubmao Media</title>
+    <link rel="stylesheet" href="css/graphic.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <div class="padding"></div>
+    <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+    <div class="paddinglogo"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="Programing.html">Programming</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="MotionGraphic.html">Motion graphic</a></li>
+                <li class="service"><a href="#">Production ▼</a>
+                    <ul class="dropdown_navbar">
+                        <li> <a href="soundnew.html">Sound</a></li>
+                        <li> <a href="editing.html">Editing</a></li>
+                        <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+
+
+
+            <div class="toggle_btn">
+                <i style="color: black;" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- side bar -->
+
+        <div class="dropdown_menu open">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="Programing.html">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li><a href="soundnew.html">Sound</a></li>
+            <li><a href="editing.html">Editing</a></li>
+            <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- login -->
+
+    <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+    <!-- darkmode -->
+
+    <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+        <img class="img3" src="sun1.png">
+        <img class="img4" src="moon1.png">
+    </div>
+    <script src="js/darkmode.js"></script>
+
+
+
+    <div class="main">
+        <div class="graphic">
+            <p>GRAPHIC</p>
+        </div>
+        <div class="btn-group">
+            <div id="BtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">All</button>
+                <button class="btn" onclick=" filterSelection('ATHENS')">ATHENS</button>
+                <button class="btn" onclick="filterSelection('AUM')">AUM</button>
+                <button class="btn" onclick="filterSelection('BAIPLU')">BAIPLU</button>
+                <button class="btn" onclick="filterSelection('FIRST')">FIRST</button>
+                <button class="btn" onclick="filterSelection('KONG')">KONG</button>
+                <button class="btn" onclick="filterSelection('MO')">MO</button>
+                <button class="btn" onclick="filterSelection('PLUCK')">PLUCK</button>
+                <button class="btn" onclick="filterSelection('TAR')">TAR</button>
+                <button class="btn" onclick="filterSelection('TONKAO')">TONKAO</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/1.Japan cool.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Japan cool</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/1.Skateboard.jpg" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Skateboard</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column ATHENS">
+                <div class="content">
+                    <img src="graphic/1.Sun.PNG" alt="a10" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Sun</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BAIPLU">
+                <div class="content">
+                    <img src="graphic/1.SO10.JPG" alt="baiplu" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">SO10</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/1.LASSIE.jpg" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">LASSIE</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column KONG">
+                <div class="content">
+                    <img src="graphic/1.king.jpg" alt="kong" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">King</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/1.Metal Head.png" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Metal Head</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/1.OLIVIA RODRIGO.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">OLIVIA RODRIGO</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/2.7 Days.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">7 Days</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/2.Warewolf.JPG" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Warewolf</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/2.CMM KMUTT.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">CMM KMUTT</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/3.Merry Christmas 2022.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Merry Christmas 2022</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BAIPLU">
+                <div class="content">
+                    <img src="graphic/2.Dorathy.PNG" alt="baiplu" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Dorathy</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column KONG">
+                <div class="content">
+                    <img src="graphic/2.pinball-design.jpg" alt="kong" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Pinball design</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/4.RJ.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">RJ</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/2.E.C.E.jpg" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">E.C.E.</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/3.Merry Christmas.JPG" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Merry Christmas</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/10.World No Tobacco Day .png" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">World No Tobacco Day</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/3.Happy Birthday Lee Haechan.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Happy Birthday Lee Haechan</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/4.Happy Birthday Mark Lee.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Happy Birthday Mark Lee</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/9.Political Science.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Political Sciencew</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/8.Global Warming.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Global Warming</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/6.boy with a pipe.png" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">boy with a pipe</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/6.ภาวะโลกร้อน.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">ภาวะโลกร้อน</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/7.ยาเสพติด.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">ยาเสพติด</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/7.Fuel Cell.png" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Fuel Cell</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/10.SOLAR LAMP! .png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">SOLAR LAMP!</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/13.Rollercoster.png" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Rollercoster</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/8.Important people in Thai classical dance.png" alt="tar" style="width:100%"
+                        height="500px">
+                    <h4 style="text-align: center;">Important people</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/5.Jisung Chenle Logo.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Jisung Chenle Logo</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/9.World No Alcohol Day .png" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">World No Alcohol Day</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/15.Jeans.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Jeans</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/11.bg-pattern.jpg" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">bg-pattern</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/14.2d Logo.JPG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">2d Logo</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/2.Jack Grealish.jpg" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Jack Grealish</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column KONG">
+                <div class="content">
+                    <img src="graphic/5.Lisa.jpg" alt="kong" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Lisa</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column KONG">
+                <div class="content">
+                    <img src="graphic/4.4D Model(co ใบพลู อุ้ม).jpg" alt="kong" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">4D Model</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column ATHENS">
+                <div class="content">
+                    <img src="graphic/2.เบญจเพส.jpeg" alt="a10" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">เบญจเพส</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column ATHENS">
+                <div class="content">
+                    <img src="graphic/3.Design process.png" alt="a10" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Design process</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/4.Hello Future.jpeg" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Hello Future</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/5.Beatbox.JPG" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Beatbox</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/6.NCT U Poster.jpeg" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">NCT U Poster</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BAIPLU">
+                <div class="content">
+                    <img src="graphic/5.Multimedia Anniversary.JPG" alt="baiplu" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Multimedia Anniversary</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/9.Glow.jpeg" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Glow</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/8.Anniversary 25th Logo.JPG" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Anniversary 25th Logo</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column AUM">
+                <div class="content">
+                    <img src="graphic/7.Background zoom.JPG" alt="aum" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Background zoom</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BAIPLU">
+                <div class="content">
+                    <img src="graphic/6.Benjapas 25.PNG" alt="baiplu" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Benjapas 25</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column KONG">
+                <div class="content">
+                    <img src="graphic/7.What going on.jpg" alt="first" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">What going on</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column FIRST">
+                <div class="content">
+                    <img src="graphic/5.25 years old bad luck.jpg" alt="first" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">25 years old bad luck</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/4.BG Zoom เบญจเพส.png" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">BG Zoom เบญจเพส</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column FIRST">
+                <div class="content">
+                    <img src="graphic/6.Balance.jpg" alt="first" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Balance</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/3.25th multi Logo.jpg" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">25th multi Logo</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/5.Mood_Tone.jpg" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Mood_Tone</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column MO">
+                <div class="content">
+                    <img src="graphic/6.Design process.jpg" alt="mo" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Design process</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/5.Chester Bennington.png" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Chester Bennington</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/6.Mood and Tone.jpg" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Mood and Tone</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/7.iPhone SE.jpg" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">iPhone SE</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <img src="graphic/8.Design Process.jpg" alt="pluck" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Design Process</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TAR">
+                <div class="content">
+                    <img src="graphic/18.background.PNG" alt="tar" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">background</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/12.BackgroundZoomCMM65.jpeg" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">BackgroundZoomCMM65</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/13.NCT DREAM Artwork.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">NCT DREAM Artwork</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/14.NCT DREAM.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">NCT DREAM</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/15.Poster Promote.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Poster Promote</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/16.ก๋วยจั๊บญวนเนตรน้อย.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">ก๋วยจั๊บญวนเนตรน้อย</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <img src="graphic/17.Dance For Health.png" alt="kao" style="width:100%" height="500px">
+                    <h4 style="text-align: center;">Dance For Health</h4>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p1 style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rights
+                reserved.
+            </p1>
+        </div>
+    </footer>
+
+    <script src="js/graphic.js"></script>
+
+</body>
+
+
+</html>

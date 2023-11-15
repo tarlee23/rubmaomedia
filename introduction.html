@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    document.getElementById("copyButton").addEventListener("click", function () {
+        const emailText = document.getElementById("email").innerText;
+        const textArea = document.createElement("textarea");
+        textArea.value = emailText;
+
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        document.getElementById("copyButton").textContent = "COPIED THIS!";
+        document.getElementById("copyButton").style.backgroundColor = "green";
+    });
+</script>
+
+<head>
+    <link rel="stylesheet" href="css/navforhomepage.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+    <link rel="icon" href="logp.png" type="image/x-icon">
+    <title>Rubmao Media</title>
+    <link rel="stylesheet" href="css/introduction.css">
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+
+    <div class="padding"></div>
+    <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+    <div class="paddinglogo"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="Programing.html">Programming</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="MotionGraphic.html">Motion graphic</a></li>
+                <li class="service"><a href="#">Production ▼</a>
+                    <ul class="dropdown_navbar">
+                        <li> <a href="soundnew.html">Sound</a></li>
+                        <li> <a href="editing.html">Editing</a></li>
+                        <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+
+
+
+            <div class="toggle_btn">
+                <i style="color: black;" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- side bar -->
+
+        <div class="dropdown_menu open">
+            <li><a href="#">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="Programing.html">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li><a href="soundnew.html">Sound</a></li>
+            <li><a href="editing.html">Editing</a></li>
+            <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- login -->
+
+    <a href="#" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+    <!-- darkmode -->
+
+    <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+        <img class="img3" src="sun1.png">
+        <img class="img4" src="moon1.png">
+    </div>
+    <script src="js/darkmode.js"></script>
+
+
+
+
+
+
+    <div class="intro"><br>
+        <p1>INTRODUCTION</p1>
+        <div class="intro2">
+            <p1>- มาทำความรู้จักกับสมาชิกของบริษัทรับเหมามีเดียกัน -</p1>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="card">
+            <img src="intropic/a10.jpg">
+            <div class="card-body">
+                <h2>ATHENS Kritsanachon</h2>
+                <p style="font-size: 18px;">กฤษณชล ธนเดชชัยมงคล</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email1" style='display: none;'>act22907@gmail.com</p><br>
+                <button id="copyButton1" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/a10skt?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/aum.jpg">
+            <div class="card-body">
+                <h2>AUM Wanwipa</h2>
+                <p style="font-size: 18px;">วรรณวิภา สดศรี</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email2" style='display: none;'>aum.sodsri@gmail.com</p><br>
+                <button id="copyButton2" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/_muaxws?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/baiplu.jpg">
+            <div class="card-body">
+                <h2>BAIPLU Viyatron</h2>
+                <p style="font-size: 18px;">ไวยาธร ธนฏ์โชคสมมุติ</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email3" style='display: none;'>puripad.jadhai@gmail.com</p><br>
+                <button id="copyButton3" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/winnietheplu?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/bill.jpg">
+            <div class="card-body">
+                <h2>BILL Apichai</h2>
+                <p style="font-size: 18px;">อภิชัย ชำนิชัยวรกุล</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email4" style='display: none;'>moviedopefilm@gmail.com</p><br>
+                <button id="copyButton4" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/bill.ap1chai?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/first.jpg">
+            <div class="card-body">
+                <h2>FIRST Apinun</h2>
+                <p style="font-size: 18px;">อภินันท์ รวมพล</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email5" style='display: none;'>beekanjanasoki@gmail.com</p><br>
+                <button id="copyButton5" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/zxrfirxt?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/kong.jpg">
+            <div class="card-body">
+                <h2>KONG Kongpob</h2>
+                <p style="font-size: 18px;">ก้องภพ กลิ่นเพ็ง</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email6" style='display: none;'>Kong.pob5885@gmail.com</p><br>
+                <button id="copyButton6" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/kongp_pob?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/mo.JPG">
+            <div class="card-body">
+                <h2>MO Namo</h2>
+                <p style="font-size: 18px;">นโม แสงเดือนฉาย</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email7" style='display: none;'>monm576@gmail.com</p><br>
+                <button id="copyButton7" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/nmtsp__?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/pluck.jpg">
+            <div class="card-body">
+                <h2>PLUCK Lanchakorn</h2>
+                <p style="font-size: 18px;">ลัญจกร ไผ่งาม</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email8" style='display: none;'>pk.chakorn08@gmail.com</p><br>
+                <button id="copyButton8" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/lphaingam?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/tar.jpg">
+            <div class="card-body">
+                <h2>TAR Hatairat</h2>
+                <p style="font-size: 18px;">หทัยรัตน์ ชื่นอุทัย</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email9" style='display: none;'>hatairat2308@gmail.com</p><br>
+                <button id="copyButton9" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/chqtar?igshid=MzRlODBiNWFlZA==" target="_blank"><button
+                        class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="intropic/kao.jpg">
+            <div class="card-body">
+                <h2>TONKAO Samitanan</h2>
+                <p style="font-size: 18px;">สมิตานัน ศรีชนะ</p>
+                <p>วิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย</p>
+                <p>มหาวิยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <p id="email10" style='display: none;'>tonkaosrichana123@gmail.com</p><br>
+                <button id="copyButton10" class="button">COPY EMAIL HERE</button><br><br>
+                <a href="https://instagram.com/samittaryy?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <button class="button">Contact</button></a>
+            </div>
+        </div>
+
+        <script>
+            function addCopyButton(buttonId, emailId) {
+                const copyButton = document.getElementById(buttonId);
+                const emailElement = document.getElementById(emailId);
+
+                if (copyButton && emailElement) {
+                    copyButton.addEventListener("click", function () {
+                        const emailText = emailElement.innerText;
+                        const textArea = document.createElement("textarea");
+                        textArea.value = emailText;
+
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+
+                        copyButton.classList.add("fade-color");
+
+                        // รอ 2 วินาทีแล้วกลับเป็นปุ่มเดิม
+                        setTimeout(function () {
+                            copyButton.classList.remove("fade-color");
+                            copyButton.textContent = "ALREADY COPY";
+                            copyButton.style.backgroundColor = "#525252";
+
+                            emailElement.style.display = "block"; // แสดง email
+                        }, 1200);
+                    });
+                }
+            }
+
+            addCopyButton("copyButton1", "email1");
+            addCopyButton("copyButton2", "email2");
+            addCopyButton("copyButton3", "email3");
+            addCopyButton("copyButton4", "email4");
+            addCopyButton("copyButton5", "email5");
+            addCopyButton("copyButton6", "email6");
+            addCopyButton("copyButton7", "email7");
+            addCopyButton("copyButton8", "email8");
+            addCopyButton("copyButton9", "email9");
+            addCopyButton("copyButton10", "email10");
+        </script>
+
+    </div>
+
+
+    <footer>
+        <div>
+            <p style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/navforhomepage.css">
+   <link rel="stylesheet" href="css/darkmode.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="logp 1.png">
+   <title>Rubmao Media</title>
+
+   <link rel="stylesheet" href="css/MotionGraphic.css">
+
+
+</head>
+
+<body>
+   <!-- nav bar -->
+
+   <div class="padding"></div>
+   <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+   <div class="paddinglogo"></div>
+   <header>
+      <div class="navbar">
+         <div class="logo"><a href="#"></a></div>
+         <ul class="links">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="Programing.html">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li class="service"><a href="#">Production ▼</a>
+               <ul class="dropdown_navbar">
+                  <li> <a href="soundnew.html">Sound</a></li>
+                  <li> <a href="editing.html">Editing</a></li>
+                  <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+               </ul>
+            </li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+
+         </ul>
+
+
+
+         <div class="toggle_btn">
+            <i style="color: black;" class="fa-solid fa-bars"></i>
+         </div>
+      </div>
+
+
+      <!-- side bar -->
+
+      <div class="dropdown_menu open">
+         <li><a href="introduction.html">Introduction</a></li>
+         <li><a href="graphic.html">Graphic</a></li>
+         <li><a href="Programing.html">Programming</a></li>
+         <li><a href="drawing.html">Drawing</a></li>
+         <li><a href="MotionGraphic.html">Motion graphic</a></li>
+         <li><a href="soundnew.html">Sound</a></li>
+         <li><a href="editing.html">Editing</a></li>
+         <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+         <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+         <li><a href="contact.html">Contact us</a></li>
+      </div>
+   </header>
+
+   <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+         dropDownMenu.classList.toggle('open')
+         const isOpen = dropDownMenu.classList.contains('open')
+
+         toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+      }
+   </script>
+
+   <!-- login -->
+
+   <a href="#" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+   <!-- darkmode -->
+
+   <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+      <img class="img3" src="sun1.png">
+      <img class="img4" src="moon1.png">
+   </div>
+   <script src="js/darkmode.js"></script>
+
+
+
+   <div class="motion">
+      <h1>MOTION GRAPHIC</h1>
+
+      <div class="container">
+
+         <div class="main-video-container">
+            <video src="motion/MG1.mp4" autoplay muted class="main-video"></video>
+            <h3 class="main-vid-title">Intro Video 1<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+            </h3>
+         </div>
+
+         <div class="video-list-container">
+
+            <div class="list active">
+               <video src="motion/MG1.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title ">Intro Video 1<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MG2.MP4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Intro Video 2<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MG3.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Intro Video 3<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MG4.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Intro Video 4<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MG5.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">End Credit<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MG6.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Sun and Star<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGA1-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Long Airline<p style="font-size: 14px; font-weight: 300;">
+                     Kongpob-Viyatron-Wawipa-Samitanan-Hatairat-Pirapat</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGA2-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Sun Shine Airline<p style="font-size: 14px; font-weight: 300;">
+                     Namo-Pronsinee-Marisa-Kanthita-Sathita</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGA3-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Animal Airline<p style="font-size: 14px; font-weight: 300;">
+                     Apichai-Apinun-Arunothai-Lanchakorn-Kritsanachon</p>
+               </h3>
+            </div>
+
+            <div class="list active">
+               <video src="motion/MGF1-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title ">Garbarge Factory<p style="font-size: 14px; font-weight: 300;">
+                     Lanchakorn-Kritsanachon-Namo</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGF2-co.mp4" class="list-video" autoplay muted muted></video>
+               <h3 class="list-title">Human Factory<p style="font-size: 14px; font-weight: 300;">
+                     Samitanan-Hatairat-Pirapat</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGF3-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Bakery factory<p style="font-size: 14px; font-weight: 300;">
+                     Kongpob-Viyatron-Wanwipa</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGL1.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Motion Graphic Loop 1<p style="font-size: 14px; font-weight: 300;">Kritsanachon
+                  </p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGL3.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Motion Graphic Loop 2<p style="font-size: 14px; font-weight: 300;">Hatairat</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGL4.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Motion Graphic Loop 3<p style="font-size: 14px; font-weight: 300;">Wanvipa</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGM1-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Beside You Motion Graphic<p style="font-size: 14px; font-weight: 300;">
+                     Lanchakorn-Kritsanachon-Namo</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGM2-co.MP4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Bad Cookie Motion Graphic<p style="font-size: 14px; font-weight: 300;">
+                     Kongpob-Viyatron-Wanwipa</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGM3-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Malibu Nights Motion Graphic<p style="font-size: 14px; font-weight: 300;">
+                     Apichai-Apinun-Arunothai</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/Painkiller - Ruel.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Painkiller - Ruel Motion Graphic<p style="font-size: 14px; font-weight: 300;">
+                     Hatairat-Samitanan-Pirapat</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP1-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Can Product<p style="font-size: 14px; font-weight: 300;">Kongpob-Viyatron-Wanwipa
+                  </p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP2-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Rumue Product<p style="font-size: 14px; font-weight: 300;">
+                     Lanchakorn-Kritsanachon-Namo</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP3-co.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Jam Enjoy Product<p style="font-size: 14px; font-weight: 300;">
+                     Apichai-Apinun-Arunothai</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGL2.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Sneakers<p style="font-size: 14px; font-weight: 300;">Hatairat</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP2.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Pacman Pinball<p style="font-size: 14px; font-weight: 300;">Namo</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP3.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Kong Island<p style="font-size: 14px; font-weight: 300;">Kongpob</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP4.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Metallica Pinball<p style="font-size: 14px; font-weight: 300;">Lanchakorn</p>
+               </h3>
+            </div>
+
+            <div class="list">
+               <video src="motion/MGP5.mp4" class="list-video" autoplay muted></video>
+               <h3 class="list-title">Breakfasr Pinball<p style="font-size: 14px; font-weight: 300;">Wanvipa</p>
+               </h3>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div>
+         <p1 style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rights reserved.
+         </p1>
+      </div>
+   </footer>
+
+   <script src="js/MotionGraphic.js"></script>
+
+
+</body>
+
+</html>

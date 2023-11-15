@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/navforhomepage.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logp.png" type="image/x-icon">
+    <title>Rubmao Media</title>
+    <link rel="stylesheet" href="css/photography2.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <div class="padding"></div>
+    <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+    <div class="paddinglogo"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="Programing.html">Programming</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="MotionGraphic.html">Motion graphic</a></li>
+                <li class="service"><a href="#">Production ▼</a>
+                    <ul class="dropdown_navbar">
+                        <li> <a href="soundnew.html">Sound</a></li>
+                        <li> <a href="editing.html">Editing</a></li>
+                        <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+
+            </ul>
+
+
+
+            <div class="toggle_btn">
+                <i style="color: black;" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+        <!-- side bar -->
+
+        <div class="dropdown_menu open">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li><a href="#">Sound</a></li>
+            <li><a href="#">Editing</a></li>
+            <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- login -->
+
+    <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+    <!-- darkmode -->
+
+    <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+        <img class="img3" src="sun1.png">
+        <img class="img4" src="moon1.png">
+    </div>
+    <script src="js/darkmode.js"></script>
+
+
+
+    <div class="main">
+        <div class="photo">
+            <p>photography </p>
+        </div>
+        <div class="btn-group">
+            <div id="BtnContainer">
+                <button class="btn active" onclick="filterSelection('Landscape')">Landscape</button>
+                <button class="btn" onclick=" filterSelection('Portrait')">Portrait</button>
+                <button class="btn" onclick="filterSelection('Close up')">Close up</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ก้อง/Landscape/BACC.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">BACC</h1>
+                    <h4 style="text-align: center;">Kongpob</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ก้อง/Landscape/Basketball.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Basketball</h1>
+                    <h4 style="text-align: center;">Kongpob</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ก้อง/Landscape/Girl _ Moon.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Girl Moon</h1>
+                    <h4 style="text-align: center;">Kongpob</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ก้อง/Landscape/Koh Larn.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Koh Larn</h1>
+                    <h4 style="text-align: center;">Kongpob</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ก้อง/Landscape/Sky.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sky</h1>
+                    <h4 style="text-align: center;">Kongpob</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/at night.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">at night</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/cloud.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">cloud</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/fish.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">fish</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/Guilt.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Guilt</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/light trail.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">light trail</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/Marina Bay Sands ,Singapore.jpg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Marina Bay Sands</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/Merlion.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Merlion</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/Miraculous clouds.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Miraculous clouds</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/night market.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">night market</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/rainbow.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">rainbow</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/sea.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">sea</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/shaking.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">shaking</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/shrine.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">shrine</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/sunset.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">sunset</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/The sun shines.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">The sun shines</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/tree.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">tree</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/vanilla sky.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">vanilla sky</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ต้า/Landscape/waterfall.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">waterfall</h1>
+                    <h4 style="text-align: center;">Hatairat</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/25 เบญจเพส.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">25 เบญจเพส</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/CMM.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">CMM</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/Instructors.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Instructors</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/My friends eating lunch.JPG" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">eating lunch</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/Panning.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Panning</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/Promotional video.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Promotional video</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/Random drawing.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Random drawing</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Landscape/showreel cmm.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">showreel cmm</h1>
+                    <h4 style="text-align: center;"> Lanchakorn</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เฟิร์ส/landscape/Low speed.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Low speed</h1>
+                    <h4 style="text-align: center;"> Apinun</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Bangmod street.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Bangmod street</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Beach chairs.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Beach chairs</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Cloudy.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Cloudy</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Panning car.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Panning car</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Panning tuktuk.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Panning tuktuk</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Sand.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sand</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Sea.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sea</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/โม/landscape/Wat Chaiwatthanaram.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Wat Chaiwatthanaram</h1>
+                    <h4 style="text-align: center;">Namo</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Assoc. Prof. Pairot Teeranathanakun.JPG" alt="draw"
+                        style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Pairot Teeranathanakun</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Blue-orange sky.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">street in Blue orange sky</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Building.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Building</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Flowers.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Flowers</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Showreel.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Showreel</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Sunlight in the cafeteria.JPG" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Sunlight</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/อุ้ม/landscape/Teenagers.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Teenagers</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Bougainvillea.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Bougainvillea</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Cat on the wall.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Cat on the wall</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Charming Alsatian Village.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Charming Alsatian</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Dormitory.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Dormitory</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Ducks in the lake.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Ducks in the lake</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Flower bush.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Flower bush</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Full of flower bushes.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Full of flower</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Hallstatt ,Austria.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Hallstatt</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Königssee ,Germany(1).jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Königssee</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Königssee ,Germany(2).jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Königssee</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Königssee ,Germany.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Königssee</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Men’s bathroom.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Men’s bathroom </h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Neaschwanstein castle ,Germany.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Neaschwanstein</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Orange sky.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Orange sky </h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Panning.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Panning </h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Road at night.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Road at night </h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Sky.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sky </h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Stairs.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Stairs</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Storage cabinet.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">Storage cabinet</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/The dog in the dark.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">The dog in the dark</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/Walkway down.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Walkway down</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column Landscape">
+                <div class="content">
+                    <img src="photo/เอเธนส์/Landscape/What is there_.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">What is there</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ก้อง/cu/Flowing water.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Flowing water</h1>
+                    <h4 style="text-align: center;">Kongpob </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ก้อง/cu/Unif fresh.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Unif fresh</h1>
+                    <h4 style="text-align: center;">Kongpob </h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/cactus.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">cactus</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/cake.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">cake</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/chinese lanterns.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">chinese lanterns</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/Clip.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Clip</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/Koi.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Koi</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/Reflection.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Reflection</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/sky.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">sky</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ต้า/Close up/Thai Denmark Milk.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Thai Denmark Milk</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/CU/Vitamilk.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Vitamilk</h1>
+                    <h4 style="text-align: center;"> Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/อุ้ม/CU/Digital art showreel.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Digital art</h1>
+                    <h4 style="text-align: center;"> Wanwipa </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/อุ้ม/CU/Multimedia.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Multimedia</h1>
+                    <h4 style="text-align: center;"> Wanwipa </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/อุ้ม/CU/Rewards.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Rewardsa</h1>
+                    <h4 style="text-align: center;"> Wanwipa </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/อุ้ม/CU/เบญจเพส.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">เบญจเพส</h1>
+                    <h4 style="text-align: center;"> Wanwipa </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/เอเธนส์/CU/Green light.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Green light</h1>
+                    <h4 style="text-align: center;"> Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/เอเธนส์/CU/Jasmine.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Jasmine</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Close up">
+                <div class="content">
+                    <img src="photo/เอเธนส์/CU/อิเม ธัมมา กุสะลา.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">อิเม ธัมมา กุสะลา</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ก้อง/Portrait/Orange cat.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Orange cat</h1>
+                    <h4 style="text-align: center;">Kongpob </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ก้อง/Portrait/Samittary.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Samittary</h1>
+                    <h4 style="text-align: center;">Kongpob </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ก้อง/Portrait/The girl_s back.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">The girl is back</h1>
+                    <h4 style="text-align: center;">Kongpob </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ต้า/Portrait/brb.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">brb</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ต้า/Portrait/Tonkao.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Tonkao</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ต้า/Portrait/Zee.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Zee</h1>
+                    <h4 style="text-align: center;">Hatairat </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Boxed lunch.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Boxed lunch</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Duck.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Duck</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Normal.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Normal</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Smoking and gun.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Smoking and gun</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Telephoto.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Telephoton</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/ปลั๊ก/Portrait/Wide angle.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Wide anglen</h1>
+                    <h4 style="text-align: center;">Lanchakorn </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/Blue hat.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Blue hat</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/Girl in taxi.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Girl in taxi</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/My girl.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">My girl</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/Polaroid.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Polaroid</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/Sandals.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sandals</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/โม/Portrait/Sunrise with you.jpg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sunrise with you</h1>
+                    <h4 style="text-align: center;">Namo </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Gifts for lucky guy.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Gifts for lucky guy</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Interview.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Interview</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Kaonoy.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Kaonoi</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Kongpob.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Kongpob</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/My mom and aunt.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">My mom and aunt</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Tarlee.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Tarlee</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/The Camera is not easy.JPG" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">The Camera</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Three teacher.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Three teacher</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Without conscience.JPEG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Without conscience</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/อุ้ม/Portrait/Zee pirapat.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Zee pirapat</h1>
+                    <h4 style="text-align: center;">Wanwipa</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/3 boys at Bangsaen.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">3 boys at Bangsaen</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Absent-minded.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Absent minded</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Black hat.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Black hat</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/His smile.JPG" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">His smile</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Namo at the bus stop.jpeg" alt="draw" style="width:100%"
+                        height="500px">
+                    <h1 style="text-align: center;">bus stop</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Namo.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Namo</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Sleep guy.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Sleep guy</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/The guy.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">The guy</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="column Portrait">
+                <div class="content">
+                    <img src="photo/เอเธนส์/portrait/Who is he_.jpeg" alt="draw" style="width:100%" height="500px">
+                    <h1 style="text-align: center;">Who is he</h1>
+                    <h4 style="text-align: center;">Kritsanachon </h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <footer>
+                <div>
+                    <p1 style="white-space: nowrap; text-align: center; ">Copyright ©
+                        2023 Rubmao
+                        Media Inc. All
+                        rightsreserved.</p1>
+                </div>
+            </footer>
+
+            <script>
+                const lightbox = document.createElement('div')
+                lightbox.id = 'lightbox'
+                document.body.appendChild(lightbox)
+
+                const images = document.querySelectorAll('img')
+                images.forEach(image => {
+                    image.addEventListener('click', e => {
+                        lightbox.classList.add('active')
+                        const img = document.createElement('img')
+                        img.src = image.src
+                        while (lightbox.firstChild) {
+                            lightbox.removeChild(lightbox.firstChild)
+                        }
+                        lightbox.appendChild(img)
+                    })
+                })
+
+                lightbox.addEventListener('click', e => {
+                    if (e.Portraitget !== e.currentPortraitget) return
+                    lightbox.classList.remove('active')
+                })
+
+            </script>
+
+
+            <script>
+                filterSelection("all");
+
+                function filterSelection(c) {
+                    var x, i;
+                    x = document.getElementsByClassName("column");
+                    if (c == "all") c = "";
+                    for (i = 0; i < x.length; i++) {
+                        w3RemoveClass(x[i], "show");
+                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                    }
+                }
+
+                function w3AddClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        if (arr1.indexOf(arr2[i]) == -1) {
+                            element.className += " " + arr2[i];
+                        }
+                    }
+                }
+
+                function w3RemoveClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        while (arr1.indexOf(arr2[i]) > -1) {
+                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                        }
+                    }
+                    element.className = arr1.join(" ");
+                }
+
+                var btnContainer = document.getElementById("BtnContainer");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active");
+                        if (current.length > 0) {
+                            current[0].className = current[0].className.replace(" active", "");
+                        }
+                        this.className += " active";
+                    });
+                }
+            </script>
+
+</body>
+
+
+</html>

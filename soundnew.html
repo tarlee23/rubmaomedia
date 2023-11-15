@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <link rel="icon" href="logp.png" type="image/x-icon">
+    <title>Rubmao Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navforhomepage.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/sound.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <div class="padding"></div>
+    <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+    <div class="paddinglogo"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="Programing.html">Programming</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="MotionGraphic.html">Motion graphic</a></li>
+                <li class="service"><a href="#">Production ▼</a>
+                    <ul class="dropdown_navbar">
+                        <li> <a href="soundnew.html">Sound</a></li>
+                        <li> <a href="editing.html">Editing</a></li>
+                        <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+
+
+
+            <div class="toggle_btn">
+                <i style="color: black;" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- side bar -->
+
+        <div class="dropdown_menu open">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="Programing.html">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li><a href="soundnew.html">Sound</a></li>
+            <li><a href="editing.html">Editing</a></li>
+            <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- login -->
+
+    <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+    <!-- darkmode -->
+
+    <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+        <img class="img3" src="sun1.png">
+        <img class="img4" src="moon1.png">
+    </div>
+    <script src="js/darkmode.js"></script>
+
+    <div class="Sound">
+        <p>SOUND</p>
+    </div>
+    <div class="main">
+
+        <!-- <p id="logo"><i class="fa fa-music"></i>Sounds</p> -->
+
+        <!-- show_song_number
+        <div class="show_song_no">
+            <p id="present">1</p>
+            <p>/</p>
+            <p id="total">5</p>
+        </div> -->
+
+
+        <!--- left part --->
+        <div class="left">
+
+            <!--- song img --->
+            <img id="track_image">
+            <div class="volume">
+                <p id="volume_show">90</p>
+                <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </div>
+
+        </div>
+
+        <!--- right part --->
+        <div class="right">
+            <!--- song title & artist name --->
+            <div class="song_detail">
+                <p id="title" style=" font-family: 'sarabun',sans-serif;">title.mp3</p>
+                <p id="artist">Artist name</p>
+            </div>
+
+            <!--- middle part --->
+            <div class="middle">
+                <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward"
+                        aria-hidden="true"></i></button>
+                <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+            </div>
+
+            <!--- song duration part --->
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+                <button id="auto" onclick="autoplay_switch()">Auto &nbsp;<i class="fa fa-circle-o-notch"
+                        aria-hidden="true"></i></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--- Add javascript file --->
+    <script src="js/sound.js"></script>
+
+</body>
+
+</html>

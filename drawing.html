@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/navforhomepage.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="logp.png" type="image/x-icon">
+  <title>Rubmao Media</title>
+  <link rel="stylesheet" href="css/drawing.css">
+</head>
+
+<body>
+
+  <!-- nav bar -->
+
+  <div class="padding"></div>
+  <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+  <div class="paddinglogo"></div>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#"></a></div>
+      <ul class="links">
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="graphic.html">Graphic</a></li>
+        <li><a href="Programing.html">Programming</a></li>
+        <li><a href="drawing.html">Drawing</a></li>
+        <li><a href="MotionGraphic.html">Motion graphic</a></li>
+        <li class="service"><a href="#">Production ▼</a>
+          <ul class="dropdown_navbar">
+            <li> <a href="soundnew.html">Sound</a></li>
+            <li> <a href="editing.html">Editing</a></li>
+            <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+          </ul>
+        </li>
+        <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+
+
+      </ul>
+
+
+
+      <div class="toggle_btn">
+        <i style="color: black;" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- side bar -->
+
+    <div class="dropdown_menu open">
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="graphic.html">Graphic</a></li>
+      <li><a href="Programing.html">Programming</a></li>
+      <li><a href="drawing.html">Drawing</a></li>
+      <li><a href="MotionGraphic.html">Motion graphic</a></li>
+      <li><a href="soundnew.html">Sound</a></li>
+      <li><a href="editing.html">Editing</a></li>
+      <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+      <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+
+    </div>
+  </header>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+  <!-- login -->
+
+  <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+  <!-- darkmode -->
+
+  <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+    <img class="img3" src="sun1.png">
+    <img class="img4" src="moon1.png">
+  </div>
+  <script src="js/darkmode.js"></script>
+
+
+  <div class="main">
+    <div class="Drawing">
+      <p>Drawing</p>
+    </div>
+    <div class="btn-group">
+      <div id="BtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick=" filterSelection('ATHENS')">ATHENS</button>
+        <button class="btn" onclick="filterSelection('AUM')">AUM</button>
+        <button class="btn" onclick="filterSelection('BAIPLU')">BAIPLU</button>
+        <button class="btn" onclick="filterSelection('FIRST')">FIRST</button>
+        <button class="btn" onclick="filterSelection('KONG')">KONG</button>
+        <button class="btn" onclick="filterSelection('MO')">MO</button>
+        <button class="btn" onclick="filterSelection('PLUCK')">PLUCK</button>
+        <button class="btn" onclick="filterSelection('TAR')">TAR</button>
+        <button class="btn" onclick="filterSelection('TONKAO')">TONKAO</button>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="column TAR">
+        <div class="content">
+          <img src="drawing/TAR/t6.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Haechan</h4>
+          </a>
+        </div>
+
+      </div>
+      <div class="column MO">
+        <div class="content">
+          <img src="drawing/MO/m9.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Sunflower</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column TAR">
+        <div class="content">
+          <img src="drawing/TAR/t13.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Practiceglass</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column BAIPLU">
+        <div class="content">
+          <img src="drawing/BAIPLU/b5.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">In love with you</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column AUM">
+        <div class="content">
+          <img src="drawing/AUM/a3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Glass and plate</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column TAR">
+        <div class="content">
+          <img src="drawing/TAR/t8.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Imitate</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column BAIPLU">
+        <div class="content">
+          <img src="drawing/BAIPLU/b3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Boykiss</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m2.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Glass, plate and spoon</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t7.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Heeseung</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m5.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">People are dancing</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m4.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">leaves and flower</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a7.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Mark Lee</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a6.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Looking for my betty ross</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b7.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">plate with glass and fork</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b13.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Wenday</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">A sky man</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t10.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Onegreen</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b9.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Skytomoon</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column FIRST">
+        <div class="content">
+
+          <img src="drawing/FIRST/f3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shadow</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k1.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Duck Shoes</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b2.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Boy</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m8.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shape and dimensions</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column PLUCK">
+        <div class="content">
+
+          <img src="drawing/PLUCK/p4.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">shadow</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">box</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">3Dgeometry</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Gradient</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t2.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Anatomy</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t17.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Wendy</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at6.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Vegetables</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t12.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Passport</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">3Dragon</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k5.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Kmutt Boy</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t5.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Dragon</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Nude, Green Leaves and Bust</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at2.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">A person at Forest</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m10.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">vegetable</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column FIRST">
+        <div class="content">
+
+          <img src="drawing/FIRST/f4.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shapes</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko8.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Purple flowers</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b8.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shadow objects</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko2.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Architecture</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column PLUCK">
+        <div class="content">
+
+          <img src="drawing/PLUCK/p1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">flowers in a vase</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko7.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Plate</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t11.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Paint nails</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k2.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">HyungInYeop</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at1.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">A man</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b10.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Sweet love</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b15.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Wonyoung</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a2.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Dorothy Poster</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t14.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shoe</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a4.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">khonsoet khonchon cover</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a9.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Rabbit header</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a11.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">smile boy</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column FIRST">
+        <div class="content">
+
+          <img src="drawing/FIRST/f2.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Fruits</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k4.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Jeno Renjun</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t4.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Chart</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b11.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Ten</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at4.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Old man with flower</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m7.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Shadow</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column PLUCK">
+        <div class="content">
+
+          <img src="drawing/PLUCK/p2.jpeg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Leaves</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b14.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Woman in the water</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b12.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Vase</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k8.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">WangYiBo</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at5.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Steal heart</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a8.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">NCT Dream</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko4.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Geometry</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b6.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Moderninbangmod</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column ATHENS">
+        <div class="content">
+
+          <img src="drawing/ATHENS/at7.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Walk Away</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a10.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Resonance NCT</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t15.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Skull</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a12.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Stickers for note</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a13.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Triple LEE</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t9.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Modern</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko5.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Leaf</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t16.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Triangle</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+
+          <img src="drawing/MO/m6.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Perspective</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a14.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">UFO </h4>
+          </a>
+        </div>
+      </div>
+      <div class="column FIRST">
+        <div class="content">
+
+          <img src="drawing/FIRST/f1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Box</h4>
+          </a>
+        </div>
+
+      </div>
+      <div class="column AUM">
+        <div class="content">
+
+          <img src="drawing/AUM/a5.JPG" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Lee Jeno</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k6.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Renjun Hello Future</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+
+          <img src="drawing/KAO/k3.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">IU</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+
+          <img src="drawing/KONG/ko6.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Mixed vegetables</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column BAIPLU">
+        <div class="content">
+
+          <img src="drawing/BAIPLU/b4.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Eatflower</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TAR">
+        <div class="content">
+
+          <img src="drawing/TAR/t3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Bear</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column TONKAO">
+        <div class="content">
+          <img src="drawing/KAO/k7.png" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Twenty Five Years Old</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column KONG">
+        <div class="content">
+          <img src="drawing/KONG/ko3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Boxone</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column MO">
+        <div class="content">
+          <img src="drawing/MO/m1.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">Box</h4>
+          </a>
+        </div>
+      </div>
+      <div class="column PLUCK">
+        <div class="content">
+          <img src="drawing/PLUCK/p3.jpg" alt="draw" style="width:100%" height="500px">
+          <h4 style="text-align: center;">objects</h4>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <p1 style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rightsreserved.
+          </p1>
+        </div>
+      </footer>
+
+      <script>
+        const lightbox = document.createElement('div')
+        lightbox.id = 'lightbox'
+        document.body.appendChild(lightbox)
+
+        const images = document.querySelectorAll('img')
+        images.forEach(image => {
+          image.addEventListener('click', e => {
+            lightbox.classList.add('active')
+            const img = document.createElement('img')
+            img.src = image.src
+            while (lightbox.firstChild) {
+              lightbox.removeChild(lightbox.firstChild)
+            }
+            lightbox.appendChild(img)
+          })
+        })
+
+        lightbox.addEventListener('click', e => {
+          if (e.target !== e.currentTarget) return
+          lightbox.classList.remove('active')
+        })
+
+      </script>
+
+
+      <script>
+        filterSelection("all");
+
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+              element.className += " " + arr2[i];
+            }
+          }
+        }
+
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("BtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+              current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+          });
+        }
+      </script>
+
+</body>
+
+
+</html>

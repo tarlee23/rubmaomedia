@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/codeprogramimg.css" />
+  <link rel="icon" href="logp 1.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/navforhomepage.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rubmao Media</title>
+
+</head>
+
+<body>
+  <!-- nav bar -->
+
+  <div class="padding"></div>
+  <a href="http://127.0.0.1:5500/homepage.html#"><img class="rubmaologocenter" src="rubmao.png"></a>
+  <div class="paddinglogo"></div>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#"></a></div>
+      <ul class="links">
+        <li><a s href="introduction.html">Introduction</a></li>
+        <li><a href="graphic.html">Graphic</a></li>
+        <li><a href="Programing.html">Programming</a></li>
+        <li><a href="drawing.html">Drawing</a></li>
+        <li><a href="MotionGraphic.html">Motion graphic</a></li>
+        <li class="service"><a href="#">Production ▼</a>
+          <ul class="dropdown_navbar">
+            <li> <a href="soundnew.html">Sound</a></li>
+            <li> <a href="editing.html">Editing</a></li>
+            <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+          </ul>
+        </li>
+        <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+
+      </ul>
+
+
+
+      <div class="toggle_btn">
+        <i style="color: black;" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- side bar -->
+
+    <div class="dropdown_menu open">
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="graphic.html">Graphic</a></li>
+      <li><a href="Programing.html">Programming</a></li>
+      <li><a href="drawing.html">Drawing</a></li>
+      <li><a href="MotionGraphic.html">Motion graphic</a></li>
+      <li><a href="soundnew.html">Sound</a></li>
+      <li><a href="editing.html">Editing</a></li>
+      <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+      <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </div>
+  </header>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+  <!-- login -->
+
+  <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+  <!-- darkmode -->
+
+  <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+    <img class="img3" src="sun1.png">
+    <img class="img4" src="moon1.png">
+  </div>
+  <script src="js/darkmode.js"></script>
+
+
+  <div class="PROGRAMMING">
+    <h3>PROGRAMMING</h3>
+    <h3></h3>
+  </div>
+
+  <div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">C++ Code : Stack </div><br>
+      <textarea id="JSBox" readonly rows="8">
+         #include <iostream> 
+            #include <cmath> 
+            #include <string> 
+            #include<stack> 
+            
+            using namespace std; 
+            void stackelement(stack<int> st); 
+            string q, yes, a, top; 
+            char ans; 
+            int n, convert (long long); 
+            void shellSort(int sort[],int size){ 
+             for(int gap=size/2;gap>0;gap/=2){ 
+              for(int i=gap;i<size;i++){ 
+               int temp=sort[i]; 
+               int j; 
+               for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){ 
+                sort[j]=sort[j-gap]; 
+               }
+               sort[j]=temp; 
+               }
+             }
+            }
+            
+            int convert(long long n) { 
+              int dec = 0, i = 0, rem; 
+            
+              while (n!=0) {
+                rem = n % 10;
+                n /= 10;
+                dec += rem * pow(2, i);
+                ++i;
+              }
+               return dec; 
+            }
+               
+            int main () {
+              do {
+             char choice; 
+             string name; 
+             cout << "Enter your name : " ; 
+             cin >> name;
+             cout << "Hello " << name << endl; 
+              cout<<endl;
+              cout << "Welcome to NUMBER SYSTEM" <<endl;
+             
+             for (int i = 0; i < 5; i++) { 
+                long long n; 
+                cout << "Enter binary number : "; 
+                cin >> n;
+                cout << n << " in binary = " << convert(n) << " in decimal" <<endl;
+              }
+               cout<<endl; 
+               cout << "Welcome to STACK" << endl;
+               stack<int> numstack; 
+               for (int i = 0; i < 5; i++) { 
+                cout << "Put number : " ;
+                cin >> n; 
+                numstack.push(n); } 
+               cout << "Original Stack : "; 
+               stackelement(numstack); 
+               cout << "\nDo you want to pop 2 stack? (yes/no) : " ;
+               cin >> a; 
+               if (a == "yes") { //สร้างเงื่อนไข ถ้า a = yes 
+                for (int i = 0; i < 2; i++) { 
+                  numstack.pop();
+                }
+                cout << "New Stack : "; 
+                stackelement(numstack); 
+                cout << "\nTOP element is : " << numstack.top() <<endl; 
+                cout << "Size of the stack : " << numstack.size() <<endl; 
+              } 
+                else {
+                cout << "Unchanged" << endl; 
+                cout << "Top element is : " << numstack.top() <<endl; 
+                cout << "Size of the stack : " <<numstack.size() <<endl; 
+              }
+            
+              int size; 
+              cout << endl; 
+              cout << "Welcome to SHELL SORT" <<endl; 
+             cout<<"Enter the size of the array : "; 
+             cin>>size; 
+              int sort[size]; 
+             for(int i = 0;i < size; i++){ 
+              cout<< "Enter array elements " << i+1 << ": "; 
+                cin >> sort[i]; 
+             }
+             shellSort(sort,size); 
+             cout<<"Array after sorting is : "; 
+             for(int i=0;i<size;i++){ 
+              cout<<sort[i]<<" "; 
+             }
+              cout<<endl; 
+            
+             cout << "Press Y to make this program run again , Press N to stop this progam : "; 
+             cin >> ans ; 
+            
+              cout<<endl;
+            }  
+              while ((ans != 'n') && (ans != 'N')); 
+            }
+            
+            void stackelement(stack<int> st) { 
+              while (!st.empty()) { 
+                cout << st.top() << ", "; 
+                st.pop(); 
+              }
+            
+            }
+       
+          </textarea>
+      <br><button id="JSButton">Copy Codes</button>
+      </section>
+    </div>
+  </div>
+  <div class="flexbox">
+    <div class="item">
+      <div class="content"><br>
+        <p style="  font-family: 'Sarabun';">Stack เป็นโปรแกรมเก็บค่า ซึ่งมีการให้ผู้ใช้ระบุค่ามา 5 ค่า
+          และโปรแกรมจะทำการเก็บค่าเพื่อแสดงผลตัวเลขทั้งหมดใน stack ต่อมาจะให้ผู้ใช้ตัดสินใจว่าต้องการนำตัวเลขใน stack
+          ออก 2 ค่าหรือไม่ โดยจะต้องให้คำตอบได้เพียง 2 ค่า คือ yes / no ซึ่งโปรแกรมจะประมวลผล พร้อมทั้งแสดงค่าที่เหลือใน
+          stack และ ตัวเลขที่สูงสุด รวมถึงจำนวนค่าทั้งหมดใน stack
+        </p><br>
+        <div class="topic">Out put :</div><br><br>
+        <textarea id="JSBox" readonly rows="8" style=" 
+                  width: 100%;
+                  padding: 15px;
+                  font-size: 15px;
+                  font-weight: 400;
+                  outline: none;
+                  border-radius: 8px;">
+                  Put number : 46
+                  Put number : 3
+                  Put number : 87
+                  Put number : 90
+                  Put number : 13
+                  Original Stack : 13, 90, 87, 3, 46,
+                  Do you want to pop 2 stack? (yes/no) : yes
+                  New Stack: 87, 3, 46,
+                  TOP element is : 87
+                  Size of the stack : 3
+                  </textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">C++ Code : Number </div><br>
+      <textarea id="JSSBox" readonly rows="8">
+      #include <iostream>
+        #include <cmath>
+        #include <string>
+        
+        using namespace std;
+        int convert (long long);
+        
+        int convert(long long n) {
+          int dec = 0, i = 0, rem;
+        
+          while (n!=0) {
+            rem = n % 10;
+            n /= 10;
+            dec += rem * pow(2, i);
+            ++i;
+          }
+           return dec;
+        }
+           
+        int main () {
+            char choice;
+            string name;
+            cout << "Enter your name: " ;
+            cin >> name;
+            cout << "Hello " << name << endl;
+            cout << "              " << endl;
+        
+            
+            for (int i = 0; i < 5; i++) {
+            long long n;
+            cout << "Enter binary number: ";
+            cin >> n;
+            cout << n << " in binary = " << convert(n) << " in decimal" << endl << endl;
+          }
+        
+          return 0;
+        }
+    </textarea>
+      <br><button id="JSSButton">Copy Codes</button>
+      </section>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="flexbox">
+    <div class="item">
+      <div class="content"><br>
+        <p>เป็นโปรแกรมที่จะให้ผู้ใช้งานสามารถเปลี่ยนเลขฐานสอง เป็นเลขฐานสิบได้ โดยการกรอกเลขฐานสองลงไป
+        </p><br>
+        <div class="topic">Out put :</div><br><br>
+        <textarea id="JSBox" readonly rows="8" style=" 
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 8px;">
+Enter your name: kong
+Hello kong
+Enter binary number: 1001001
+1001001 in binary = 73 in decimal
+    </textarea>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">C++ Code : Shell </div><br>
+      <textarea id="JSSSBox" readonly rows="8">
+#include<iostream>
+    using namespace std; 
+    void shellSort(int sort[],int size){
+        for(int gap=size/2;gap>0;gap/=2){
+            for(int i=gap;i<size;i++){
+                int temp=sort[i];
+                int j;
+                for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){
+                    sort[j]=sort[j-gap];
+                }
+                sort[j]=temp;
+                }
+        }
+    }
+    int main(){
+        int size;
+        char ans;
+        do{
+        cout<<"Enter the size of the array:";
+        cin>>size;
+        int sort[size];
+        cout<<"Enter array elements:\n";
+        for(int i=0;i<size;i++){
+            cin>>sort[i];
+        }
+        shellSort(sort,size);
+        cout<<"Array after sorting is:";
+        for(int i=0;i<size;i++){
+            cout<<sort[i]<<" ";
+        }
+        cout<<endl;
+    
+        cout << "Press Y to make this program run again , Press N to stop this progam :"<< endl;
+        cin >> ans ;
+    }  
+        while ((ans != 'n') && (ans != 'N'));
+        return 0;
+    }
+</textarea>
+      <br><button id="JSSSButton">Copy Codes</button>
+      </section>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="flexbox">
+    <div class="item">
+      <div class="content"><br>
+        <p>เป็นโปรแกรมจัดเรียงข้อมูลในรูปแบบของ Shell sort โดยผู้ใช้จะต้องกำหนดขนาด array
+          และระบุตัวเลขมาตามจำนวนที่กำหนดไป ซึ่งโปรแกรมจะประมวลผลและแสดงค่าทั้งหมดออกมา
+        </p><br>
+        <div class="topic">Out put :</div><br><br>
+        <textarea id="JSBox" readonly rows="8" style=" 
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 8px;">
+Enter the size of the array: 3
+Enter array elements:
+2
+56
+43
+Array after sorting is:2 43 56
+    </textarea>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">C++ Code : โปรแกรมรับออร์เดอร์รายการอาหาร </div><br>
+      <textarea id="JSSSSBox" readonly rows="8" style="font-size: 9px;">
+      #include <iostream>
+        using namespace std;
+        
+        int main()
+        {
+        
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << "     -------------------------------------------------------------------------------------------         \n";
+            cout << endl;
+            cout << endl;
+            cout << endl;
+        
+            cout << "              _/          _/  _/_/_/_/  _/          _/_/_/    _/_/    _/      _/   _/_/_/_/     \n";
+            cout << "             _/          _/  _/        _/        _/        _/    _/  _/_/  _/_/   _/            \n";
+            cout << "            _/    _/    _/  _/_/_/    _/        _/        _/    _/  _/  _/  _/   _/_/_/         \n";
+            cout << "             _/  _/  _/    _/        _/        _/        _/    _/  _/       _/  _/               \n";
+            cout << "              _/  _/      _/_/_/_/  _/_/_/_/    _/_/_/    _/_/    _/       _/  _/_/_/_/          \n";
+        
+            cout << endl;
+            cout << endl;
+            cout << endl;
+        
+            cout << "     -------------------------------------------------------------------------------------------         \n";
+        
+            cout << endl;
+            cout << endl;
+          
+        
+            string userName;
+            string userPassword;
+            int loginAttempt = 0;
+        
+            while (loginAttempt < 5)
+            {
+                cout << "                       Please enter your user name: ";
+                cin >> userName;
+                cout << "                       Please enter your user password: ";
+                cin >> userPassword;
+        
+        
+                if (userName == "WONYOUNG" && userPassword == "123456789")
+                {
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << "                                                     Welcome WONYOUNG!\n";
+                    break;
+                }
+                else if (userName == "TENLEE" && userPassword == "allten")
+                {
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+                    cout << endl;
+        
+                    cout << "                                                      Welcome allten!\n";
+                    break;
+                }
+                else
+                {
+                    cout << "Invalid login attempt. Please try again.\n" << '\n';
+                    loginAttempt++;
+                }
+            }
+            if (loginAttempt == 5)
+            {
+                cout << "Too many login attempts! The program will now terminate.";
+                return 0;
+            }
+            int meal;
+            int mealQty;
+            int drinks;
+            int drinksQty;
+            double Burger = 50.00;
+            double EggSandwich = 25.00;
+            double BaconandCheeseBurger = 40.00;
+            double CheeseBurger = 50;
+            double DoubleCheeseBurger = 69.00;
+            double CrispyChickenSandwich = 99.00;
+            double SpicyChickenSandwich = 99.00;
+            double OnionRings = 70.00;
+            double ChickenNuggets = 50.00;
+            double FrenchFries = 90.00;
+            double salmonsteak = 139;
+        
+        
+            double AmountOfSaleBurger = 0;
+            double AmountOfSalesEggSanwich = 0;
+            double AmountOfSaleBaconandCheeseBurger = 0;
+            double AmountOfSaleCheeseBurger = 0;
+            double AmountOfSaleDoubleCheeseBurger = 0;
+            double AmountOfSaleCrispyChickenSandwich = 0;
+            double AmountOfSaleSpicyChickenSandwich = 0;
+            double AmountOfSaleOnionRings = 0;
+            double AmountOfSaleChickenNuggets = 0;
+            double AmountOfSaleFrenchFries = 0;
+            double AmountOfSalesalminsteak = 0;
+        
+        
+            double coke = 20.00;
+            double water = 15.00;
+            double sprite = 20.00;
+            double pineappleJuice = 20.00;
+        
+            double AmountOfSalecoke = 0;
+            double AmountOfSalewater = 0;
+            double AmountOfSalespite = 0;
+            double AmountOfSalespineappleJuice = 0;
+        
+            double cash;
+            double total = 0;
+        
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
+            cout << "                                                 Thank you for logging in.           \n";
+            cout << endl;
+            cout << "                                                          WELCOME.                   \n";
+            cout << "                                                          WELCOME.                   \n";
+            cout << "                                                          WELCOME.                   \n";
+            cout << "                                                          WELCOME.                   \n";
+            cout << "                                                          WELCOME.                   \n";
+        
+            cout << "\n\n\t\t\t\t             =====>>>>PICK YOUR ORDER<<<<=====\n\n";
+        
+            cout << "\t\t=================================================================================\n";
+            cout << "\t\t\t  PRODUCT NUMBER\t\tPRODUCT\t\t\t   PRICE\n";
+            cout << "\t\t=================================================================================\n";
+            cout << "\t\t\t         1\t    Burger\t\t\t\t50.00  BATH\n";
+            cout << "\t\t\t         2\t    Egg Sandwich\t\t\t25.00  BATH\n";
+            cout << "\t\t\t         3\t    Bacon and Cheese Burger\t\t40.00  BATH\n";
+            cout << "\t\t\t         4\t    Cheese Burger\t\t\t50.00  BATH\n";
+            cout << "\t\t\t         5\t    Double Cheese Burger\t\t69.00  BATH\n";
+            cout << "\t\t\t         6\t    Crispy Chicken Sandwich\t\t99.00  BATH\n";
+            cout << "\t\t\t         7\t    Spicy Chicken Sandwich\t\t99.00  BATH\n";
+            cout << "\t\t\t         8\t    Onion Rings\t\t\t\t70.00  BATH\n";
+            cout << "\t\t\t         9\t    Chicken Nuggets\t\t\t50.00  BATH\n";
+            cout << "\t\t\t         10\t    French Fries\t\t\t90.00  BATH\n";
+            cout << "\t\t\t         11\t    Salmon Steak\t\t\t139.00 BATH\n";
+            cout << "\t\t==================================================================================\n";
+            cout << "\t\t\t  PRODUCT NUMBER\t\tDRINKS\t\t\t   PRICE\n";
+            cout << "\t\t==================================================================================\n";
+            cout << "\t\t\t         01\t    Coke\t\t\t\t20.00 BATH\n";
+            cout << "\t\t\t         02\t    Water\t\t\t\t15.00 BATH\n";
+            cout << "\t\t\t         03\t    Sprite\t\t\t\t20.00 BATH\n";
+            cout << "\t\t\t         04\t    Pineapple Juice\t\t\t40.00 BATH\n";
+            cout << "\t\t==================================================================================\n";
+            cout << "\t\t==================================================================================\n";
+            cout << endl;
+            cout << endl;
+            cout << endl;
+        
+        
+            cout << "                --------------------------" << endl;
+            cout << "                   PRODUCT NUMBER :";
+            cin >> meal;
+            cout << "                --------------------------" << endl;
+            cout << "                    HOW MANY?  : ";
+            cin >> mealQty;
+            cout << "                --------------------------" << endl;
+        
+            cout << "                --------------------------" << endl;
+            cout << "                   DRINKS NUMBER  :";
+            cin >> drinks;
+            cout << "                --------------------------" << endl;
+            cout << "                    HOW MANY?  : ";
+            cin >> drinksQty;
+            cout << "                --------------------------" << endl;
+        
+            cout << "\n\t        item Ordered \t\t\n\n";
+        
+            switch (meal)
+            {
+            case 1:
+                cout << "\t\tBurger.....................50.00 X" << mealQty << "=" << mealQty * Burger << "\n";
+                AmountOfSaleBurger = mealQty * Burger;
+                break;
+        
+            case 2:
+                cout << "\t\tEgg Sanwich.................25.00 X" << mealQty << "=" << mealQty * EggSandwich << "\n";
+                AmountOfSalesEggSanwich = mealQty * EggSandwich;
+                break;
+        
+            case 3:
+                cout << "\t\tBacon and Cheese Burger....40.00 X" << mealQty << "=" << mealQty * BaconandCheeseBurger << "\n";
+                AmountOfSaleBaconandCheeseBurger = mealQty * BaconandCheeseBurger;
+                break;
+            case 4:
+                cout << "\t\tCheese Burger...............50.00 X" << mealQty << "=" << mealQty * CheeseBurger << "\n";
+                AmountOfSaleCheeseBurger = mealQty * CheeseBurger;
+                break;
+            case 5:
+                cout << "\t\tDouble Cheese Burger........69.00 X" << mealQty << "=" << mealQty * DoubleCheeseBurger << "\n";
+                AmountOfSaleDoubleCheeseBurger = mealQty * DoubleCheeseBurger;
+                break;
+            case 6:
+                cout << "\t\tCrispy Chicken Sandwich.....99.00 X" << mealQty << "=" << mealQty * CrispyChickenSandwich << "\n";
+                AmountOfSaleCrispyChickenSandwich = mealQty * CrispyChickenSandwich;
+                break;
+            case 7:
+                cout << "\t\tSpicy Chicken Sandwich......99.00 X" << mealQty << " = " << mealQty * SpicyChickenSandwich << "\n";
+                AmountOfSaleSpicyChickenSandwich = mealQty * SpicyChickenSandwich;
+                break;
+            case 8:
+                cout << "\t\tOnion Rings ................70.00 X" << mealQty << "=" << mealQty * OnionRings << "\n";
+                AmountOfSaleOnionRings = mealQty * OnionRings;
+                break;
+            case 9:
+                cout << "\t\tChicken Nuggets.............50.00 X" << mealQty << "=" << mealQty * ChickenNuggets << "\n";
+                AmountOfSaleChickenNuggets = mealQty * ChickenNuggets;
+                break;
+            case 10:
+                cout << "\t\tFrench Fries................90.00 X" << mealQty << "=" << mealQty * FrenchFries << "\n";
+                AmountOfSaleFrenchFries = mealQty * FrenchFries;
+                break;
+            case 11:
+                cout << "\t\tSalmon Steck ................139.00 X" << mealQty << "=" << mealQty * salmonsteak << "\n";
+                AmountOfSalesalminsteak = mealQty * salmonsteak;
+                break;
+            default:
+                cout << "\t\tNO ORDER ";
+                break;
+            }
+            {
+                switch (drinks)
+                {
+                case 1:
+                    cout << "\t\tCoke..................20.00 X" << drinksQty << "=" << drinksQty * coke << "\n";
+                    AmountOfSalecoke = drinksQty * coke;
+                    break;
+        
+                case 2:
+                    cout << "\t\tWater.................15.00 X" << drinksQty << "=" << drinksQty * water << "\n";
+                    AmountOfSalewater = drinksQty * water;
+                    break;
+                case 3:
+                    cout << "\t\tSprite................20.00 X" << drinksQty << "=" << drinksQty * sprite << "\n";
+                    AmountOfSalespite = drinksQty * sprite;
+                    break;
+                case 4:
+                    cout << "\t\tPineapple Juice.......40.00 X" << drinksQty << "=" << drinksQty * pineappleJuice << "\n";
+                    AmountOfSalespineappleJuice = drinksQty * pineappleJuice;
+                default:
+                    cout << "\t\tNO DRINKS";
+                    break;
+                }
+        
+            }
+            total = 0;
+            total = total + AmountOfSaleBurger + +AmountOfSalesEggSanwich + AmountOfSaleBaconandCheeseBurger + AmountOfSaleCheeseBurger + AmountOfSaleDoubleCheeseBurger + AmountOfSalesalminsteak + AmountOfSaleCrispyChickenSandwich + AmountOfSaleSpicyChickenSandwich + AmountOfSaleOnionRings + AmountOfSaleFrenchFries + AmountOfSaleChickenNuggets + AmountOfSalecoke + AmountOfSalewater + AmountOfSalespite + AmountOfSalespineappleJuice;
+            cout << endl;
+            cout << "\t\tTotal Amount is : " << total << "\n";
+            cout << endl;
+            cout << "\t\tCash :";
+            cin >> cash;
+            cout << endl;
+            cout << "\t\tchange :" << cash - total << "\n\n";
+        
+            
+        
+            cout << endl;
+            cout << endl;
+            cout << endl;
+        
+        
+            cout << "\t\t\t\t\t\tENJOY YOUR MEAL<3\n\n";
+        
+            cout << endl;
+            cout << endl;
+            cout << endl;
+        
+            cout << "\n\n\t\t===============================================================================\n";
+        
+            cout << "\t\t\t\t\t\t   thank U ka    ";
+        
+            cout << "\n\n\t\t===============================================================================\n";
+        
+        
+        
+        }
+        
+</textarea>
+      <br><button id="JSSSSButton">Copy Codes</button>
+      </section>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="flexbox">
+    <div class="item">
+      <div class="content">
+        <p><br>
+          เป็นโปรแกรมสั่งอาหาร ที่มีระบบ log in เพื่อบันทึกข้อมูลของผู้ใช้งานในการใช้สั่งอาหาร
+          และมีการแสดงผลสรุปข้อมูลทั้งหมด รวมถึงคำนวณเงินออกมา
+        </p><br>
+        <div class="topic">Out put :</div><br><br>
+        <textarea id="JSBox" readonly rows="8" style=" 
+    height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 10px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 8px;">
+    -------------------------------------------------------------------------------------------         
+
+
+
+    _/          _/  _/_/_/_/  _/          _/_/_/    _/_/    _/      _/   _/_/_/_/     
+   _/          _/  _/        _/        _/        _/    _/  _/_/  _/_/   _/            
+  _/    _/    _/  _/_/_/    _/        _/        _/    _/  _/  _/  _/   _/_/_/         
+   _/  _/  _/    _/        _/        _/        _/    _/  _/       _/  _/               
+    _/  _/      _/_/_/_/  _/_/_/_/    _/_/_/    _/_/    _/       _/  _/_/_/_/          
+-------------------------------------------------------------------------------------------         
+
+
+             Please enter your user name: plu
+             Please enter your user password: cccc
+             Invalid login attempt. Please try again.
+
+             Please enter your user name: cc
+             Please enter your user password: cc
+             Invalid login attempt. Please try again.
+
+             Please enter your user name: plu
+             Please enter your user password: cccc
+             Invalid login attempt. Please try again.
+
+             Please enter your user name: WONYOUNG
+             Please enter your user password: 123456789
+             Welcome WONYOUNG!
+
+
+
+
+
+
+
+
+                                       Thank you for logging in.           
+
+                                                WELCOME.                   
+                                                WELCOME.                   
+                                                WELCOME.                   
+                                                WELCOME.                   
+                                                WELCOME.                   
+
+
+           =====>>PICK YOUR ORDER<<<<=====
+
+=================================================================================
+PRODUCT NUMBER		PRODUCT			   PRICE
+=================================================================================
+     1	    Burger				50.00  BATH
+     2	    Egg Sandwich			25.00  BATH
+     3	    Bacon and Cheese Burger		40.00  BATH
+     4	    Cheese Burger			50.00  BATH
+     5	    Double Cheese Burger		69.00  BATH
+     6	    Crispy Chicken Sandwich		99.00  BATH
+     7	    Spicy Chicken Sandwich		99.00  BATH
+     8	    Onion Rings				70.00  BATH
+     9	    Chicken Nuggets			50.00  BATH
+     10	    French Fries			90.00  BATH
+     11	    Salmon Steak			139.00 BATH
+==================================================================================
+PRODUCT NUMBER		DRINKS			   PRICE
+==================================================================================
+     01	    Coke				20.00 BATH
+     02	    Water				15.00 BATH
+     03	    Sprite				20.00 BATH
+     04	    Pineapple Juice			40.00 BATH
+==================================================================================
+==================================================================================
+
+
+
+      --------------------------
+         PRODUCT NUMBER :1
+         --------------------------
+          HOW MANY?  : 2
+          --------------------------
+      --------------------------
+         DRINKS NUMBER  :2
+         --------------------------
+          HOW MANY?  : 1
+          --------------------------
+
+item Ordered 		
+
+Burger.....................50.00 X2=100
+Water.................15.00 X1=15
+
+Total Amount is : 115
+
+Cash :150
+change :35
+
+
+
+
+  ENJOY YOUR MEAL<3
+
+
+
+
+
+
+===============================================================================
+     thank U ka    
+
+===============================================================================
+    </textarea>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="text-boxes">
+    <div class="text-box JSBox">
+      <div class="topic">C++ Code : Tower of Hanoi </div><br>
+      <textarea id="JSSSSSBox" readonly rows="1">
+        #include <iostream>
+            using namespace std;
+            
+            void ToH (int n, char src, char aux, char dest) 
+            {
+                if (n==1) 
+                {
+                    cout << "Move disk - " << n << " from " << src << " to " << dest <<endl;
+                    return;
+                }
+            
+                ToH (n-1, src, dest, aux);
+                cout << "Move disk - " << n << " from " << src << " to " << dest <<endl;
+                ToH (n-1, aux, src, dest);
+            }
+            
+            int main ()
+            {
+                int n;
+                cout << "Enter no. of disks : ";
+                cin >> n;
+                ToH (n, 'A', 'B', 'C');
+            
+                system("pause");
+                return 0;
+            }
+            
+        
+  </textarea>
+      <br><button id="JSSSSSButton">Copy Codes</button>
+      </section>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="flexbox">
+    <div class="item">
+      <div class="content"><br>
+        <p>เป็นโปรแกรมที่ใช้ในการแก้ปัญหา “Tower of Hanoi
+        </p><br>
+        <div class="topic">Out put :</div><br><br>
+        <textarea id="JSBox" readonly rows="8" style=" 
+    width: 100%;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 8px;">
+  Enter no. of disks : 3
+  Move disk - 1 from A to C
+  Move disk - 2 from A to B
+  Move disk - 1 from C to B
+  Move disk - 3 from A to C
+  Move disk - 1 from B to A
+  Move disk - 2 from B to C
+  Move disk - 1 from A to C
+    </textarea>
+      </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="flexbox">
+    <div class="item">
+      <div class="content">
+        <footer>
+          <div>
+            <p style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rights reserved.
+            </p>
+          </div>
+        </footer>
+
+        <script src="js/programingjava.js"></script>
+
+</body>
+
+</html>
