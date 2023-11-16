@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/navforhomepage.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/editing.css">
+    <link rel="icon" href="logp 1.png">
+    <title>Rubmao Media</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <div class="padding"></div>
+    <a href="homepage.html"><img class="rubmaologocenter" src="rubmao.png"></a>
+    <div class="paddinglogo"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="graphic.html">Graphic</a></li>
+                <li><a href="Programing.html">Programming</a></li>
+                <li><a href="drawing.html">Drawing</a></li>
+                <li><a href="MotionGraphic.html">Motion graphic</a></li>
+                <li class="service"><a href="#">Production ▼</a>
+                    <ul class="dropdown_navbar">
+                        <li> <a href="soundplay.html">Sound</a></li>
+                        <li> <a href="editing.html">Editing</a></li>
+                        <li> <a href="photographyหน้าเเรก.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+
+
+
+            <div class="toggle_btn">
+                <i style="color: black;" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- side bar -->
+
+        <div class="dropdown_menu open">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="graphic.html">Graphic</a></li>
+            <li><a href="Programing.html">Programming</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="MotionGraphic.html">Motion graphic</a></li>
+            <li><a href="soundplay.html">Sound</a></li>
+            <li><a href="editing.html">Editing</a></li>
+            <li><a href="photographyหน้าเเรก.html">Photography</a></li>
+            <li><a href="การจ้างงาน.html">การจ้างงาน</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- login -->
+
+    <a href="log.html" style="position: sticky; right: 20px; top: 30px;" class="action_btn">Log in / Sign-Up</a>
+
+    <!-- darkmode -->
+
+    <div style="position:fixed; top:30px; left: 20px;" class="toggle">
+        <img class="img3" src="sun1.png">
+        <img class="img4" src="moon1.png">
+    </div>
+    <script src="js/darkmode.js"></script>
+
+
+
+    <div class="main3">
+        <div class="graphic">
+            <p>EDITING</p>
+        </div>
+        <div class="btn-group">
+            <div id="BtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">All</button>
+                <button class="btn" onclick=" filterSelection('BILL')">BILL</button>
+                <button class="btn" onclick="filterSelection('TAR')">TAR</button>
+                <button class="btn" onclick="filterSelection('PLUCK')">PLUCK</button>
+                <button class="btn" onclick="filterSelection('FIRST')">FIRST</button>
+                <button class="btn" onclick="filterSelection('MO')">MO</button>
+                <button class="btn" onclick="filterSelection('AUM')">AUM</button>
+                <button class="btn" onclick="filterSelection('TONKAO')">TONKAO</button>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="column BILL">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;">
+                        <iframe src="https://streamable.com/e/z2em8t" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;">
+                        </iframe>
+                    </div>
+                    <h4 style="text-align: center;">Friend</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BILL">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/c650sv" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Mantra Warrior</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column BILL">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/a43q8r" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Please tell me </h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column TAR">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/45yp5w" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Multimedia</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column TAR">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:55.781%;"><iframe
+                            src="https://streamable.com/e/b9p370" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Money heist X NCT</h4>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="column TAR">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/vz88og" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">The Dream Lab Limitless</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column TAR">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/vzq0ly" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">The Dream Lab Misfit</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column TAR">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/ss0781" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">The Dream Lab the 7th</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/skwk3e" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Choey Moey</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/joqcec" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">School</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/8rdowh" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">The life of multimedia</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column PLUCK">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/abh33x" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">vlog 1 day </h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column FIRST">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/hiokk9" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">good game valorant</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column FIRST">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/wawihf" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Teaser Overcooked 2</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column FIRST">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/235iix" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Valorant</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column MO">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/90k9f9" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">MV Girl & Boy</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column MO">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/e6zwt5" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Vlog 1 Day with CMM</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column AUM">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/8jowv1" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">ชีวิตเด็กมัลติ</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column AUM">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/tc4a9l" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Chandelier</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column AUM">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/euose6" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">What they want</h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column TONKAO">
+                <div class="content">
+                    <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                            src="https://streamable.com/e/iph6bt" frameborder="0" width="100%" height="100%"
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+                    </div>
+                    <h4 style="text-align: center;">Cartoon Network</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p1 style="white-space: nowrap; text-align: center; ">Copyright © 2023 Rubmao Media Inc. All rights
+                reserved.
+            </p1>
+        </div>
+    </footer>
+
+    <script src="js/editing.js"></script>
+
+</body>
+
+</html>
