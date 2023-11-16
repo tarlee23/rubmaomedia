@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Sarabun";
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f0f0;
+  font-family: "Sarabun";
+}
+
+h3 {
+  color: black;
+  font-size: 58px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: -70px;
+}
+
+.dark h3 {
+  color: #fff;
+}
+
+.text-boxes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 28px;
+}
+
+.flexbox {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: block;
+  box-sizing: border-box;
+  width: 600px;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+
+.content p {
+  font-size: 16px;
+  margin: 0;
+
+}
+
+.text-boxes .text-box {
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+
+.text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+
+
+.dark .text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 4px;
+}
+
+.text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+
+
+.dark .text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #BDBDBD;
+}
+
+.text-box textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #3e6ff4;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+.dark .text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #616161;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+
+.text-boxes .text-box button:hover {
+  background: #265df2;
+}
+
+@media (max-width: 400px) {
+  .text-boxes .text-box button {
+    width: 100%;
+  }
+}
+
+.text-box1 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+}
+
+.text-box1 p {
+  font-size: 16px;
+  margin: 0;
+
+}
+
+footer {
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.dark footer {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+p {
+  font-family: 'Sarabun';
+}
+
+.dark p {
+  color: #fff;
+}
+
+.flexbox .item .content .topic {
+  color: #265df2;
+}
+
+.dark .flexbox .item .content .topic {
+  color: white;
+}
+
+.dark h3 {
+  color: #fff;
+}

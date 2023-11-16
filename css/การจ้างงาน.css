@@ -1,0 +1,304 @@
+
+
+h1{
+    position: relative;
+    margin-top: 50px;
+    color: black;
+    font-size: 58px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.dark h1{
+    position: relative;
+    margin-top: 50px;
+    color: #fff;
+}
+
+
+
+nav z {
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: -100px;
+}
+
+
+h3{
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    top: 55px;
+}
+
+.dark h3{
+    color: #fff;
+}
+
+.row1 {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #d4d4d462;
+    opacity: 100%;
+    border-radius: 32px;
+    margin-top: 110px;
+    box-shadow: 3px 6px 20px 14px rgba(77, 77, 77, 0.4);
+    position: relative;
+    bottom: 100px;
+}
+
+.dark .row1 {
+    background: #616161;
+}
+
+
+.row2 {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #d4d4d462;
+    opacity: 100%;
+    border-radius: 32px;
+    margin-top: 110px;
+    box-shadow: 3px 6px 20px 14px rgba(77, 77, 77, 0.4);
+    position: relative;
+    bottom: 100px;
+}
+
+
+.dark .row2 {
+    background: #616161;;
+}
+
+.row3 {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #d4d4d462;
+    opacity: 100%;
+    border-radius: 32px;
+    margin-top: 110px;
+    box-shadow: 3px 6px 20px 14px rgba(77, 77, 77, 0.4);
+    position: relative;
+    bottom: 120px;
+}
+
+
+.dark .row3 {
+    background: #616161;
+}
+
+
+
+.row4 {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #d4d4d462;
+    opacity: 100%;
+    border-radius: 32px;
+    margin-top: 110px;
+    box-shadow: 3px 6px 20px 14px rgba(77, 77, 77, 0.4);
+    position: relative;
+    bottom: 120px;
+}
+
+
+.dark .row4 {
+    background: #616161;
+}
+
+
+
+.row5 {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #f2f2f577;
+    opacity: 100%;
+    border-radius: 32px;
+    margin-top: 110px;
+    box-shadow: 3px 6px 20px 14px rgba(77, 77, 77, 0.4);
+    position: relative;
+    bottom: 110px;
+}
+
+
+.dark .row5 {
+    background: #616161;
+}
+
+
+
+.c2 {
+    width: auto;
+    max-width: fit-content;
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.dark .c2 {
+    color: white;
+}
+
+
+.c3 {
+    width: auto;
+    max-width: fit-content;
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.dark .c3 {
+    color: white;
+}
+
+
+.c4 {
+    width: auto;
+    max-width: fit-content;
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.dark .c4 {
+    color: white;
+}
+
+
+.c5 {
+    width: auto;
+    max-width: fit-content;
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.dark .c5 {
+    color: white;
+}
+
+
+.c6 {
+    width: auto;
+    max-width: fit-content;
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+
+.dark .c6 {
+    color: white;
+}
+
+
+z{
+    font-size: 28px;
+    font-weight: 500;
+}
+ol,li{
+    font-weight: 300;
+}
+span{
+    font-weight: 400;
+}
+h1{
+    font-size: 35px;
+}
+
+z{
+    font-weight: 600;
+}
+footer {
+    display: flex;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+
+.dark footer {
+    color: white;
+}
+@media screen and (max-width: 768px) {
+
+    nav z {
+      margin-left: 10px;
+    }
+  
+    h3 {
+    margin: -20px 10px 20px;
+    }
+
+  
+  
+    .row1,
+    .row2,
+    .row3,
+    .row4,
+    .row5 {
+      width: 95%;
+      margin-bottom: 20px;
+    }
+  
+    .c3 {
+      margin: 0 10px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+   
+    z {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 25px;
+      
+    }
+  
+    footer {
+      margin-top: 20px;
+    }
+  }
