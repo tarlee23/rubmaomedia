@@ -211,7 +211,7 @@ p {
 
 
 
-section2 * {
+section2 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -225,6 +225,22 @@ section2 body {
   background: #f5f0f0;
   font-family: "Sarabun";
 }
+
+section2 .topic{
+  position: relative;
+  top: 20px;
+  margin-top: -50px;
+  color: #265df2;
+}
+
+.dark .topic{
+  position: relative;
+  top: 20px;
+  margin-top: -50px;
+  color: white;
+
+}
+
 
 section2 h3 {
   color: black;
@@ -266,22 +282,31 @@ section2 .item {
 
 section2 .content {
   margin: 0 auto;
+  padding: 18px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+section2 .dark .content {
+  margin: 0 auto;
   padding: 16px;
   flex-shrink: 0;
+  margin-top: 50px;
+  background-color: #3e6ff4;
 }
 
 
-section2 .content p {
+section2 p {
   font-size: 16px;
-  margin: 0;
-
+  margin: 10%;
+  line-height: 165%;
 }
 
 section2 .text-boxes .text-box {
   height: 380px;
   max-width: 660px;
   width: 100%;
-  margin: 55px 0;
+  margin: 55px;
 }
 
 section2 .text-boxes .text-box .topic {
@@ -309,7 +334,6 @@ section2 .text-boxes .text-box textarea {
   border: 1px solid #265df2;
   border-radius: 8px;
   background: #e7edfe;
-  margin-top: -50px;
 }
 
 
@@ -372,50 +396,40 @@ section2 .text-boxes .text-box button:hover {
   }
 }
 
-section2 .text-box1 {
+  section2 .text-box1 {
   max-width: 900px;
   margin: 0 auto;
   padding: 16px;
   box-sizing: border-box;
   flex-shrink: 0;
-
 }
 
-section2 .text-box1 p {
+  section2 .text-box1 p {
   font-size: 16px;
   margin: 0;
 
 }
 
 
-
-section2 .dark footer {
-  display: block;
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-top: 100px;
-}
-
-section2 p {
+  section2 p {
   font-family: 'Sarabun';
 }
 
-section2 .dark p {
+  section2 .dark p {
   color: #fff;
 }
 
-section2 .flexbox .item .content .topic {
+  section2 .flexbox .item .content .topic {
   color: #265df2;
-}
+ }
 
-section2 .dark .flexbox .item .content .topic {
+  section2 .dark .flexbox .item .content .topic {
   color: white;
-}
+ }
 
-section2 .dark h3 {
+  section2 .dark h3 {
   color: #fff;
-}
+ }
 
 
 
