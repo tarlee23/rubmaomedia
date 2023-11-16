@@ -419,202 +419,207 @@
         <script src="js/graphic.js"></script>
     </section1>
 
-    <section2>
-        <h3>PROGRAMMING</h3>
+        <section2>
+        <div class="PROGRAMMING">
+            <h3>PROGRAMMING</h3>
+            <h3></h3>
+        </div>
         <div class="text-boxes">
             <div class="text-box JSBox">
-                <div class="topic">C++ Code : Stack </div>
+                <div class="topic">C++ Code : Stack </div><br>
                 <textarea id="JSBox" readonly rows="8">
-                         #include <iostream> 
-                            #include <cmath> 
-                            #include <string> 
-                            #include<stack> 
-                            
-                            using namespace std; 
-                            void stackelement(stack<int> st); 
-                            string q, yes, a, top; 
-                            char ans; 
-                            int n, convert (long long); 
-                            void shellSort(int sort[],int size){ 
-                             for(int gap=size/2;gap>0;gap/=2){ 
-                              for(int i=gap;i<size;i++){ 
-                               int temp=sort[i]; 
-                               int j; 
-                               for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){ 
-                                sort[j]=sort[j-gap]; 
-                               }
-                               sort[j]=temp; 
-                               }
-                             }
-                            }
-                            
-                            int convert(long long n) { 
-                              int dec = 0, i = 0, rem; 
-                            
-                              while (n!=0) {
-                                rem = n % 10;
-                                n /= 10;
-                                dec += rem * pow(2, i);
-                                ++i;
-                              }
-                               return dec; 
-                            }
-                               
-                            int main () {
-                              do {
-                             char choice; 
-                             string name; 
-                             cout << "Enter your name : " ; 
-                             cin >> name;
-                             cout << "Hello " << name << endl; 
-                              cout<<endl;
-                              cout << "Welcome to NUMBER SYSTEM" <<endl;
-                             
-                             for (int i = 0; i < 5; i++) { 
-                                long long n; 
-                                cout << "Enter binary number : "; 
-                                cin >> n;
-                                cout << n << " in binary = " << convert(n) << " in decimal" <<endl;
-                              }
-                               cout<<endl; 
-                               cout << "Welcome to STACK" << endl;
-                               stack<int> numstack; 
-                               for (int i = 0; i < 5; i++) { 
-                                cout << "Put number : " ;
-                                cin >> n; 
-                                numstack.push(n); } 
-                               cout << "Original Stack : "; 
-                               stackelement(numstack); 
-                               cout << "\nDo you want to pop 2 stack? (yes/no) : " ;
-                               cin >> a; 
-                               if (a == "yes") { //สร้างเงื่อนไข ถ้า a = yes 
-                                for (int i = 0; i < 2; i++) { 
-                                  numstack.pop();
-                                }
-                                cout << "New Stack : "; 
-                                stackelement(numstack); 
-                                cout << "\nTOP element is : " << numstack.top() <<endl; 
-                                cout << "Size of the stack : " << numstack.size() <<endl; 
-                              } 
-                                else {
-                                cout << "Unchanged" << endl; 
-                                cout << "Top element is : " << numstack.top() <<endl; 
-                                cout << "Size of the stack : " <<numstack.size() <<endl; 
-                              }
-                            
-                              int size; 
-                              cout << endl; 
-                              cout << "Welcome to SHELL SORT" <<endl; 
-                             cout<<"Enter the size of the array : "; 
-                             cin>>size; 
-                              int sort[size]; 
-                             for(int i = 0;i < size; i++){ 
-                              cout<< "Enter array elements " << i+1 << ": "; 
-                                cin >> sort[i]; 
-                             }
-                             shellSort(sort,size); 
-                             cout<<"Array after sorting is : "; 
-                             for(int i=0;i<size;i++){ 
-                              cout<<sort[i]<<" "; 
-                             }
-                              cout<<endl; 
-                            
-                             cout << "Press Y to make this program run again , Press N to stop this progam : "; 
-                             cin >> ans ; 
-                            
-                              cout<<endl;
-                            }  
-                              while ((ans != 'n') && (ans != 'N')); 
-                            }
-                            
-                            void stackelement(stack<int> st) { 
-                              while (!st.empty()) { 
-                                cout << st.top() << ", "; 
-                                st.pop(); 
-                              }
-                            
-                            }
-                       
-                          </textarea>
-                <button id="JSButton">Copy Codes</button>
+             #include <iostream> 
+                #include <cmath> 
+                #include <string> 
+                #include<stack> 
+                
+                using namespace std; 
+                void stackelement(stack<int> st); 
+                string q, yes, a, top; 
+                char ans; 
+                int n, convert (long long); 
+                void shellSort(int sort[],int size){ 
+                 for(int gap=size/2;gap>0;gap/=2){ 
+                  for(int i=gap;i<size;i++){ 
+                   int temp=sort[i]; 
+                   int j; 
+                   for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){ 
+                    sort[j]=sort[j-gap]; 
+                   }
+                   sort[j]=temp; 
+                   }
+                 }
+                }
+                
+                int convert(long long n) { 
+                  int dec = 0, i = 0, rem; 
+                
+                  while (n!=0) {
+                    rem = n % 10;
+                    n /= 10;
+                    dec += rem * pow(2, i);
+                    ++i;
+                  }
+                   return dec; 
+                }
+                   
+                int main () {
+                  do {
+                 char choice; 
+                 string name; 
+                 cout << "Enter your name : " ; 
+                 cin >> name;
+                 cout << "Hello " << name << endl; 
+                  cout<<endl;
+                  cout << "Welcome to NUMBER SYSTEM" <<endl;
+                 
+                 for (int i = 0; i < 5; i++) { 
+                    long long n; 
+                    cout << "Enter binary number : "; 
+                    cin >> n;
+                    cout << n << " in binary = " << convert(n) << " in decimal" <<endl;
+                  }
+                   cout<<endl; 
+                   cout << "Welcome to STACK" << endl;
+                   stack<int> numstack; 
+                   for (int i = 0; i < 5; i++) { 
+                    cout << "Put number : " ;
+                    cin >> n; 
+                    numstack.push(n); } 
+                   cout << "Original Stack : "; 
+                   stackelement(numstack); 
+                   cout << "\nDo you want to pop 2 stack? (yes/no) : " ;
+                   cin >> a; 
+                   if (a == "yes") { //สร้างเงื่อนไข ถ้า a = yes 
+                    for (int i = 0; i < 2; i++) { 
+                      numstack.pop();
+                    }
+                    cout << "New Stack : "; 
+                    stackelement(numstack); 
+                    cout << "\nTOP element is : " << numstack.top() <<endl; 
+                    cout << "Size of the stack : " << numstack.size() <<endl; 
+                  } 
+                    else {
+                    cout << "Unchanged" << endl; 
+                    cout << "Top element is : " << numstack.top() <<endl; 
+                    cout << "Size of the stack : " <<numstack.size() <<endl; 
+                  }
+                
+                  int size; 
+                  cout << endl; 
+                  cout << "Welcome to SHELL SORT" <<endl; 
+                 cout<<"Enter the size of the array : "; 
+                 cin>>size; 
+                  int sort[size]; 
+                 for(int i = 0;i < size; i++){ 
+                  cout<< "Enter array elements " << i+1 << ": "; 
+                    cin >> sort[i]; 
+                 }
+                 shellSort(sort,size); 
+                 cout<<"Array after sorting is : "; 
+                 for(int i=0;i<size;i++){ 
+                  cout<<sort[i]<<" "; 
+                 }
+                  cout<<endl; 
+                
+                 cout << "Press Y to make this program run again , Press N to stop this progam : "; 
+                 cin >> ans ; 
+                
+                  cout<<endl;
+                }  
+                  while ((ans != 'n') && (ans != 'N')); 
+                }
+                
+                void stackelement(stack<int> st) { 
+                  while (!st.empty()) { 
+                    cout << st.top() << ", "; 
+                    st.pop(); 
+                  }
+                
+                }
+           
+              </textarea>
+                <br><button id="JSButton">Copy Codes</button>
+                </section>
             </div>
         </div>
         <div class="flexbox">
             <div class="item">
-                <div class="content">
+                <div class="content"><br>
                     <p style="  font-family: 'Sarabun';">Stack เป็นโปรแกรมเก็บค่า ซึ่งมีการให้ผู้ใช้ระบุค่ามา 5 ค่า
                         และโปรแกรมจะทำการเก็บค่าเพื่อแสดงผลตัวเลขทั้งหมดใน stack
-                        ต่อมาจะให้ผู้ใช้ตัดสินใจว่าต้องการนำตัวเลขใน stack ออก 2 ค่าหรือไม่ โดยจะต้องให้คำตอบได้เพียง 2
-                        ค่า คือ yes / no ซึ่งโปรแกรมจะประมวลผล พร้อมทั้งแสดงค่าที่เหลือใน stack และ ตัวเลขที่สูงสุด
-                        รวมถึงจำนวนค่าทั้งหมดใน stack
-                    </p>
-                    <div class="topic">Out put :</div>
+                        ต่อมาจะให้ผู้ใช้ตัดสินใจว่าต้องการนำตัวเลขใน
+                        stack
+                        ออก 2 ค่าหรือไม่ โดยจะต้องให้คำตอบได้เพียง 2 ค่า คือ yes / no ซึ่งโปรแกรมจะประมวลผล
+                        พร้อมทั้งแสดงค่าที่เหลือใน
+                        stack และ ตัวเลขที่สูงสุด รวมถึงจำนวนค่าทั้งหมดใน stack
+                    </p><br>
+                    <div class="topic">Out put :</div><br><br>
                     <textarea id="JSBox" readonly rows="8" style=" 
-                                  width: 100%;
-                                  padding: 15px;
-                                  font-size: 15px;
-                                  font-weight: 400;
-                                  outline: none;
-                                  border-radius: 8px;">
-                                  Put number : 46
-                                  Put number : 3
-                                  Put number : 87
-                                  Put number : 90
-                                  Put number : 13
-                                  Original Stack : 13, 90, 87, 3, 46,
-                                  Do you want to pop 2 stack? (yes/no) : yes
-                                  New Stack: 87, 3, 46,
-                                  TOP element is : 87
-                                  Size of the stack : 3
-                                  </textarea>
+                      width: 100%;
+                      padding: 15px;
+                      font-size: 15px;
+                      font-weight: 400;
+                      outline: none;
+                      border-radius: 8px;">
+                      Put number : 46
+                      Put number : 3
+                      Put number : 87
+                      Put number : 90
+                      Put number : 13
+                      Original Stack : 13, 90, 87, 3, 46,
+                      Do you want to pop 2 stack? (yes/no) : yes
+                      New Stack: 87, 3, 46,
+                      TOP element is : 87
+                      Size of the stack : 3
+                      </textarea>
                 </div>
             </div>
-
         </div>
 
         <div class="text-boxes">
             <div class="text-box JSBox">
-                <div class="topic">C++ Code : Number </div>
+                <div class="topic">C++ Code : Number </div><br>
                 <textarea id="JSSBox" readonly rows="8">
-                      #include <iostream>
-                        #include <cmath>
-                        #include <string>
-                        
-                        using namespace std;
-                        int convert (long long);
-                        
-                        int convert(long long n) {
-                          int dec = 0, i = 0, rem;
-                        
-                          while (n!=0) {
-                            rem = n % 10;
-                            n /= 10;
-                            dec += rem * pow(2, i);
-                            ++i;
-                          }
-                           return dec;
-                        }
-                           
-                        int main () {
-                            char choice;
-                            string name;
-                            cout << "Enter your name: " ;
-                            cin >> name;
-                            cout << "Hello " << name << endl;
-                            cout << "              " << endl;
-                        
-                            
-                            for (int i = 0; i < 5; i++) {
-                            long long n;
-                            cout << "Enter binary number: ";
-                            cin >> n;
-                            cout << n << " in binary = " << convert(n) << " in decimal" << endl << endl;
-                          }
-                        
-                          return 0;
-                        }
-                    </textarea>
-                <button id="JSSButton">Copy Codes</button>
+      #include <iostream>
+        #include <cmath>
+        #include <string>
+        
+        using namespace std;
+        int convert (long long);
+        
+        int convert(long long n) {
+          int dec = 0, i = 0, rem;
+        
+          while (n!=0) {
+            rem = n % 10;
+            n /= 10;
+            dec += rem * pow(2, i);
+            ++i;
+          }
+           return dec;
+        }
+           
+        int main () {
+            char choice;
+            string name;
+            cout << "Enter your name: " ;
+            cin >> name;
+            cout << "Hello " << name << endl;
+            cout << "              " << endl;
+        
+            
+            for (int i = 0; i < 5; i++) {
+            long long n;
+            cout << "Enter binary number: ";
+            cin >> n;
+            cout << n << " in binary = " << convert(n) << " in decimal" << endl << endl;
+          }
+        
+          return 0;
+        }
+    </textarea>
+                <br><button id="JSSButton">Copy Codes</button>
                 </section>
             </div>
         </div>
@@ -623,23 +628,23 @@
 
         <div class="flexbox">
             <div class="item">
-                <div class="content">
+                <div class="content"><br>
                     <p>เป็นโปรแกรมที่จะให้ผู้ใช้งานสามารถเปลี่ยนเลขฐานสอง เป็นเลขฐานสิบได้ โดยการกรอกเลขฐานสองลงไป
-                    </p>
-                    <div class="topic">Out put :</div>
+                    </p><br>
+                    <div class="topic">Out put :</div><br><br>
                     <textarea id="JSBox" readonly rows="8" style=" 
-                    width: 100%;
-                    height: 120px;
-                    padding: 15px;
-                    font-size: 15px;
-                    font-weight: 400;
-                    outline: none;
-                    border-radius: 8px;">
-                Enter your name: kong
-                Hello kong
-                Enter binary number: 1001001
-                1001001 in binary = 73 in decimal
-                    </textarea>
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 8px;">
+Enter your name: kong
+Hello kong
+Enter binary number: 1001001
+1001001 in binary = 73 in decimal
+    </textarea>
                 </div>
             </div>
 
@@ -648,51 +653,55 @@
         </div>
         <div class="text-boxes">
             <div class="text-box JSBox">
-                <div class="topic">C++ Code : Shell </div>
+                <div class="topic">C++ Code : Shell </div><br>
                 <textarea id="JSSSBox" readonly rows="8">
-                #include<iostream>
-                    using namespace std; 
-                    void shellSort(int sort[],int size){
-                        for(int gap=size/2;gap>0;gap/=2){
-                            for(int i=gap;i<size;i++){
-                                int temp=sort[i];
-                                int j;
-                                for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){
-                                    sort[j]=sort[j-gap];
-                                }
-                                sort[j]=temp;
-                                }
+        #include<iostream>
+            using namespace std; 
+            void shellSort(int sort[],int size){
+                for(int gap=size/2;gap>0;gap/=2){
+                    for(int i=gap;i<size;i++){
+                        int temp=sort[i];
+                        int j;
+                        for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){
+                            sort[j]=sort[j-gap];
                         }
-                    }
-                    int main(){
-                        int size;
-                        char ans;
-                        do{
-                        cout<<"Enter the size of the array:";
-                        cin>>size;
-                        int sort[size];
-                        cout<<"Enter array elements:\n";
-                        for(int i=0;i<size;i++){
-                            cin>>sort[i];
+                        sort[j]=temp;
                         }
-                        shellSort(sort,size);
-                        cout<<"Array after sorting is:";
-                        for(int i=0;i<size;i++){
-                            cout<<sort[i]<<" ";
-                        }
-                        cout<<endl;
-                    
-                        cout << "Press Y to make this program run again , Press N to stop this progam :"<< endl;
-                        cin >> ans ;
-                    }  
-                        while ((ans != 'n') && (ans != 'N'));
-                        return 0;
-                    }
-                </textarea>
-                <button id="JSSSButton">Copy Codes</button>
+                }
+            }
+            int main(){
+                int size;
+                char ans;
+                do{
+                cout<<"Enter the size of the array:";
+                cin>>size;
+                int sort[size];
+                cout<<"Enter array elements:\n";
+                for(int i=0;i<size;i++){
+                    cin>>sort[i];
+                }
+                shellSort(sort,size);
+                cout<<"Array after sorting is:";
+                for(int i=0;i<size;i++){
+                    cout<<sort[i]<<" ";
+                }
+                cout<<endl;
+            
+                cout << "Press Y to make this program run again , Press N to stop this progam :"<< endl;
+                cin >> ans ;
+            }  
+                while ((ans != 'n') && (ans != 'N'));
+                return 0;
+            }
+        </textarea>
+                <br><button id="JSSSButton">Copy Codes</button>
                 </section>
             </div>
         </div>
+        </div>
+        </div>
+
+        </textarea>
         </div>
         </div>
 
@@ -723,7 +732,6 @@
         </div>
         </div>
         </div>
-
         <button class="buttongraphic" style="width: 20%; position: relative"><a href="Programing.html">VIEW
                 ALL</a></button>
 
