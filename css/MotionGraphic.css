@@ -86,12 +86,12 @@ footer {
   margin-top: 50px;
 }
 
-.dark .p {
-  color: #fff;
+.dark .p footer {
   display: block;
   width: 100%;
   color: black;
   text-align: center;
   margin-top: 100px;
   font-size: 20px;
+  color: #fff;
 }
