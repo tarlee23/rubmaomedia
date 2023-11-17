@@ -208,3 +208,232 @@ p {
 .dark h3 {
   color: #fff;
 }
+
+
+
+section2 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Sarabun";
+}
+
+section2 body {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f0f0;
+  font-family: "Sarabun";
+}
+
+section2 .topic{
+  position: relative;
+  top: 20px;
+  margin-top: -50px;
+  color: #265df2;
+}
+
+.dark .topic{
+  position: relative;
+  top: 20px;
+  margin-top: -50px;
+  color: white;
+
+}
+
+
+section2 h3 {
+  color: black;
+  font-size: 58px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: -70px;
+}
+
+section2 .dark h3 {
+  color: #fff;
+}
+
+section2 .text-boxes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 28px;
+}
+
+section2 .flexbox {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+section2 .item {
+  display: block;
+  box-sizing: border-box;
+  width: 600px;
+}
+
+section2 .content {
+  margin: 0 auto;
+  padding: 18px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+section2 .dark .content {
+  margin: 0 auto;
+  padding: 16px;
+  flex-shrink: 0;
+  margin-top: 50px;
+  background-color: #3e6ff4;
+}
+
+
+section2 p {
+  font-size: 16px;
+  margin: 10%;
+  line-height: 165%;
+}
+
+section2 .text-boxes .text-box {
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px;
+}
+
+section2 .text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+
+
+section2 .dark .text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 4px;
+}
+
+section2 .text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+
+
+section2 .dark .text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #BDBDBD;
+}
+
+section2 .text-box textarea::-webkit-scrollbar {
+  display: none;
+}
+
+section2 .text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #3e6ff4;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+section2 .dark .text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #616161;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+
+section2 .text-boxes .text-box button:hover {
+  background: #265df2;
+}
+
+@media (max-width: 400px) {
+  section2 .text-boxes .text-box button {
+    width: 100%;
+  }
+}
+
+  section2 .text-box1 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+  section2 .text-box1 p {
+  font-size: 16px;
+  margin: 0;
+
+}
+
+
+  section2 p {
+  font-family: 'Sarabun';
+}
+
+  section2 .dark p {
+  color: #fff;
+}
+
+  section2 .flexbox .item .content .topic {
+  color: #265df2;
+ }
+
+  section2 .dark .flexbox .item .content .topic {
+  color: white;
+ }
+
+  section2 .dark h3 {
+  color: #fff;
+ }
+
+
+
+
+
+
+
